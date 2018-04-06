@@ -1,0 +1,11 @@
+{
+  "name": "get-id-api",
+  "version": "1.0.0",
+  "description": "get id teacher from web klogic to my project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
