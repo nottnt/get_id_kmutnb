@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 })
 app.get('/fuck/:id', function (req, res) {
   let id = req.params.id
-  res.send('<h1>hello fucking project!!!' + id +'</h1>')
+  res.send({stdid : id})
 })
 
 app.listen(port, function() {
