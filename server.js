@@ -12,13 +12,13 @@ const nightmare = Nightmare({ show: true })
 //   res.send({stdid : id})
 // })
 
-// app.listen(port, function() {
-//   console.log('Starting node.js on port ' + port)
-// })
+app.listen(port, function() {
+  console.log('Starting node.js on port ' + port)
+})
 
 // console.log('hello fucking project!!!')
 
-app.get('/', function (req, res) {
+app.get('/getid', function (req, res) {
 nightmare
   .goto('http://klogic.kmutnb.ac.th:8080/kris/tess/dataQuerySelector.jsp?query=teachTab')
   .wait(1000)
