@@ -18,7 +18,7 @@ const nightmare = Nightmare({ show: true })
 
 // console.log('hello fucking project!!!')
 
-
+app.get('/', function (req, res) {
 nightmare
   .goto('http://klogic.kmutnb.ac.th:8080/kris/tess/dataQuerySelector.jsp?query=teachTab')
   .wait(1000)
@@ -44,3 +44,4 @@ nightmare
   .catch(error => {
     console.error('Search failed:', error)
   })
+})
