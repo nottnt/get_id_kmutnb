@@ -1,5 +1,5 @@
 var app = require('express')();
-//var port = process.env.PORT || 5000;
+var port = process.env.PORT || 5000;
 const Nightmare = require('nightmare')
 const nightmare = Nightmare({ show: false })
 
@@ -12,9 +12,9 @@ app.get('/', function (req, res) {
 //   res.send({stdid : id})
 // })
 
-// app.listen(port, function() {
-//   console.log('Starting node.js on port ' + port)
-// })
+app.listen(port, function() {
+  console.log('Starting node.js on port ' + port)
+})
 
 
 app.get('/getid', function (req, res) {
