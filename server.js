@@ -21,11 +21,11 @@ app.listen(port, function() {
 app.get('/getid', function (req, res) {
 nightmare
   .goto('http://klogic.kmutnb.ac.th:8080/kris/tess/dataQuerySelector.jsp?query=teachTab')
-  .wait(1000)
+  .wait(500)
   .select('select[name="facCode"]', '06')
-  .wait(1000)
+  .wait(500)
   .select('select[name="lectCode"]', 'SLJ')
-  .wait(1000)
+  .wait(500)
   .evaluate(function () {
     var data = []
     var tablerow = document.body.getElementsByTagName('table')[4].getElementsByTagName('tr')
