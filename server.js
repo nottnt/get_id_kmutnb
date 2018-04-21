@@ -1,7 +1,7 @@
 var app = require('express')();
 //var port = process.env.PORT || 5000;
 const Nightmare = require('nightmare')
-//const nightmare = Nightmare({ show: true })
+const nightmare = Nightmare({ show: false })
 
 // app.get('/', function (req, res) {
 //   res.send('<h1>Hello Node.js</h1>')
