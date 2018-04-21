@@ -3,9 +3,9 @@ var port = process.env.PORT || 5000;
 const Nightmare = require('nightmare')
 const nightmare = Nightmare()
 
-// app.get('/', function (req, res) {
-//   res.send('<h1>Hello Node.js</h1>')
-// })
+app.get('/', function (req, res) {
+  res.send('<h1>Hello Node.js</h1>')
+})
 // app.get('/:id', function (req, res) {
 //   let id = req.params.id
   
