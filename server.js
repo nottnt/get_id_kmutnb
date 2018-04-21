@@ -1,5 +1,5 @@
 var app = require('express')();
-var port = process.env.PORT ||5000;
+var port = process.env.PORT;
 const Nightmare = require('nightmare')
 const nightmare = Nightmare()
 
