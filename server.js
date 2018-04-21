@@ -1,5 +1,5 @@
 var app = require('express')();
-var port = process.env.PORT;
+var port = process.env.PORT || 5000;
 const Nightmare = require('nightmare')
 const nightmare = Nightmare()
 
@@ -21,11 +21,11 @@ app.listen(port, function() {
 app.get('/getid', function (req, res) {
 nightmare
   .goto('http://klogic.kmutnb.ac.th:8080/kris/tess/dataQuerySelector.jsp?query=teachTab')
-  .wait(500)
+  .wait(2000)
   .select('select[name="facCode"]', '06')
-  .wait(500)
+  .wait(2000)
   .select('select[name="lectCode"]', 'SLJ')
-  .wait(500)
+  .wait(2000)
   .evaluate(function () {
     var data = []
     var tablerow = document.body.getElementsByTagName('table')[4].getElementsByTagName('tr')
@@ -94,8 +94,8 @@ data.push(
 .end()
 
 .then((value) => {
-    
-  res.send(value)
+  console.log('test1'+value)
+  res.send({value})
 })
 .catch(error => {
  
