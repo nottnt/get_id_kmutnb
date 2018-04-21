@@ -38,36 +38,36 @@ nightmare
 
 
 
-// for(var c = 1;c<tablerow.length;c++){ข้อมูลตารางสอน
+for(var c = 1;c<tablerow.length;c++){
 
-// data.push(
-//   {
-//     datarow : tablerow[c].getElementsByTagName('td')[0].innerText,
-//     datarow2 : tablerow[c].getElementsByTagName('td')[1].innerText,
-//     count : tablerow.length
+data.push(
+  {
+    datarow : tablerow[c].getElementsByTagName('td')[0].innerText,
+    datarow2 : tablerow[c].getElementsByTagName('td')[1].innerText,
+    count : tablerow.length
 
-//   }
+  }
 
-// )
-// }
-
-for (var i = 1; i < tableday.length; i++) {
-  data.push(
-    {
-      day: tableday[i].innerText,
-      // subject: tablerow[i].getElementsByTagName('td')[1].innerText,
-      // part: i,
-      count: tableday.length
-      //m:dayM.innerText,
-      // t:dayT.innerText,
-      // w:dayW.innerText,
-      // h:dayH.innerText,
-       //f:dayF.getElementsByTagName('td')[1].innerText
-
-
-    }
-  )
+)
 }
+
+// for (var i = 1; i < tableday.length; i++) {
+//   data.push(
+//     {
+//       day: tableday[i].innerText,
+//       // subject: tablerow[i].getElementsByTagName('td')[1].innerText,
+//       // part: i,
+//       count: tableday.length
+//       //m:dayM.innerText,
+//       // t:dayT.innerText,
+//       // w:dayW.innerText,
+//       // h:dayH.innerText,
+//        //f:dayF.getElementsByTagName('td')[1].innerText
+
+
+//     }
+//   )
+// }
     
     // for (var i = 0; i < tableday.length; i++) {//วันเวลา
     //     data.push(
